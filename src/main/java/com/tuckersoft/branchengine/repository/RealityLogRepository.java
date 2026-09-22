@@ -1,0 +1,1 @@
+package com.tuckersoft.branchengine.repository; import com.tuckersoft.branchengine.entity.RealityLog; import org.springframework.data.jpa.repository.JpaRepository; import java.util.*; public interface RealityLogRepository extends JpaRepository<RealityLog,Long>{List<RealityLog> findByDecisionIdOrderByCreatedAtAsc(Long id);}
