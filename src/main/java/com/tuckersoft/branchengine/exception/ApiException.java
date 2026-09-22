@@ -1,0 +1,1 @@
+package com.tuckersoft.branchengine.exception; import org.springframework.http.HttpStatus; import lombok.Getter; @Getter public class ApiException extends RuntimeException { private final HttpStatus status; private final String error; public ApiException(HttpStatus s,String e,String m){super(m);status=s;error=e;} }
