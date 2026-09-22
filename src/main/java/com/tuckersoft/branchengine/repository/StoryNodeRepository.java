@@ -1,0 +1,1 @@
+package com.tuckersoft.branchengine.repository; import com.tuckersoft.branchengine.entity.StoryNode; import org.springframework.data.jpa.repository.JpaRepository; import java.util.*; public interface StoryNodeRepository extends JpaRepository<StoryNode,Long>{Optional<StoryNode> findByNodeCode(String c); boolean existsByNodeCode(String c);}
